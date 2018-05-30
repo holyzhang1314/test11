@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+bhhhgv
+<ul>
+<!-- for循环在模板中的代码，注意不需要冒号 -->
+{% for i in dicts %}
+    <!-- 这个里面的内容会在每次循环执行 -->
+    <li>{{ i.btitle }}</li>
+<!-- 在python是以缩进来结束循环的，
+  但模板中缩进不靠谱，所以要使用endfor来结束for循环
+-->
+{% endfor %}
+</ul>
+
+<ul>
+<!-- for循环在模板中的代码，注意不需要冒号 -->
+{% for i in dictes %}
+    <!-- 这个里面的内容会在每次循环执行 -->
+    <li>{{ i.hname }}</li>
+<!-- 在python是以缩进来结束循环的，
+  但模板中缩进不靠谱，所以要使用endfor来结束for循环
+-->
+{% endfor %}
+</ul>
+</body>
+</html>
